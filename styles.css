@@ -1,0 +1,40 @@
+.game-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.result-container {
+    background-color: white;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    transition: transform 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+#truthBtn, #dareBtn, #nextBtn {
+    min-width: 150px;
+}
+
+.animate__bounceIn {
+    animation-duration: 1.5s;
+}
+
+@media (max-width: 576px) {
+    .btn-lg {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+    
+    #truthBtn, #dareBtn {
+        min-width: 120px;
+        margin-bottom: 10px;
+    }
+}
