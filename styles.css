@@ -38,3 +38,63 @@
         margin-bottom: 10px;
     }
 }
+
+@keyframes neon-flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        text-shadow: 
+            0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 20px #fff,
+            0 0 40px #0ff,
+            0 0 80px #0ff,
+            0 0 90px #0ff,
+            0 0 100px #0ff,
+            0 0 150px #0ff;
+    }
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
+}
+
+@keyframes neon-flicker-alt {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        text-shadow: 
+            0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 20px #fff,
+            0 0 40px #f09,
+            0 0 80px #f09,
+            0 0 90px #f09,
+            0 0 100px #f09,
+            0 0 150px #f09;
+    }
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
+}
+
+.neon-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.neon-text {
+    color: #fff;
+    animation: neon-flicker 1.5s infinite alternate;
+    font-family: "微軟正黑體", sans-serif;
+}
+
+.neon-text-alt {
+    color: #fff;
+    animation: neon-flicker-alt 1.5s infinite alternate;
+    font-family: "微軟正黑體", sans-serif;
+}
+
+body {
+    background: #1a1a1a !important;
+}
+
+.container {
+    margin-top: 2rem;
+}
